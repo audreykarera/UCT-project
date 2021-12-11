@@ -1,7 +1,33 @@
-<mat-toolbar>
-  <span>My App</span>
+<!-- <mat-toolbar>
+  <span>Logout Tool Bar</span>
   <span class="example-spacer"></span>
-  <mat-icon (click)="dialogLogin()">power_settings_new</mat-icon>
+  <mat-icon class="icon-hover" (click)="dialogLogin()">power_settings_new</mat-icon>
+</mat-toolbar>
+<br>
+<mat-toolbar>
+  <span>Admin Tool Bar</span>
+  <span class="example-spacer"></span>
+  <mat-icon class="icon-hover" (click)="dialogLogin()">power_settings_new</mat-icon>
+</mat-toolbar>
+<br> -->
+<mat-toolbar>
+  <span>Student Tool Bar</span>
+  <span class="example-spacer"></span>
+  <span class="icon-hover" routerLink="/student-reports">
+    <mat-icon> poll</mat-icon><span>Reports</span>
+  </span>
+  <span class="example-spacer"></span>
+  <span class="icon-hover" routerLink="/student-courses">
+    <mat-icon> perm_media</mat-icon><span>Courses</span>
+  </span>
+  <span class="example-spacer"></span>
+  <span class="icon-hover" routerLink="/profile">
+    <mat-icon> perm_identity</mat-icon><span>Profile</span>
+  </span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon class="icon-hover" (click)="dialogLogin()">power_settings_new</mat-icon>
+  </button>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
