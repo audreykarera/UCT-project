@@ -11,12 +11,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { LoginDialogComponent } from './dialogs/login-dialog/login-dialog.component';
+import { MatCardModule } from '@angular/material/card';
 
 const angularMaterials = [
   MatToolbarModule,
   MatIconModule,
   MatDialogModule, 
-  MatButtonModule
+  MatButtonModule,
+  MatCardModule
 ]
 
 @NgModule({
